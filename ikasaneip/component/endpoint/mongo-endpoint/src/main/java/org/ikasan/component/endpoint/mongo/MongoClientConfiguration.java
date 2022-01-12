@@ -149,13 +149,13 @@ public class MongoClientConfiguration
     protected Integer threadsAllowedToBlockForConnectionMultiplier;
 
     /** Does it use SSL **/
-    protected Boolean sslEnabled;
+    protected Boolean sslEnabled = false;
 
     /** Does it validate the server hostname to match the certificate **/
-    protected Boolean sslInvalidHostNameAllowed;
+    protected Boolean sslInvalidHostNameAllowed = false;
 
     /** Does it use '+srv' to connect to the mongo endpoint **/
-    protected Boolean srvRecord;
+    protected Boolean srvRecord = false;
     
     public List<String> getConnectionUrls() {
         return connectionUrls;
